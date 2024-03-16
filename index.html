@@ -34,6 +34,13 @@
             box-shadow: 0 0 20px rgba(230, 57, 70, 0.2),
                         0 0 40px rgba(255, 255, 255, 0.3);
         }
+        .floating-logo {
+            width: 100px; /* Adjust as needed */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
         h1, h2, p, h3 {
             margin: 20px 0;
         }
@@ -81,10 +88,28 @@
 </head>
 <body>
     <div class="container">
+        <img src="/logo.png" alt="Logo" class="floating-logo">
         <h1>ADHD India</h1>
         <h2>Committed to transforming lives through comprehensive support and empowerment</h2>
         <p>Set to launch India's first and only nonprofit dedicated to ADHD, we will focus on diagnosis, psychotherapy, counseling, advocacy, litigation, awareness, and research.</p>
         <h3>-❤️-</h3>
     </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var logo = document.querySelector('.floating-logo');
+            var angle = 0;
+            function floatLogo() {
+                angle += 0.1;
+                var cos = Math.cos(angle) * 10; // Adjust the amplitude of the float
+                var sin = Math.sin(angle) * 10; // Adjust the amplitude of the float
+                logo.style.top = `calc(50% + ${cos}px)`;
+                logo.style.left = `calc(50% + ${sin}px)`;
+                requestAnimationFrame(floatLogo);
+            }
+            floatLogo();
+        });
+    </script>
+
 </body>
 </html>
