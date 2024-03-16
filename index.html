@@ -38,9 +38,9 @@
         .floating-logo {
             width: 100px;
             position: absolute;
-            top: 10px; /* Adjusted for starting at top */
+            top: 0;
             left: 50%;
-            transform: translateX(-50%); /* Horizontally center only */
+            transform: translateX(-50%);
         }
         h1, h2, p, h3 {
             margin: 20px 0;
@@ -98,15 +98,24 @@
     
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            var logo = document.querySelector('.floating-logo');
-            var startTime = Date.now();
+            const logo = document.querySelector('.floating-logo');
+            let moveDirection = 1; // 1 for down, -1 for up
+            let position = 0; // Start position
+            let range = 20; // Range of movement in pixels
+            
             function floatLogo() {
-                var currentTime = Date.now();
-                var timeDiff = currentTime - startTime;
-                var floatPosition = Math.sin(timeDiff * 0.002) * 10; // Amplitude adjustment
-                logo.style.top = `calc(10px + ${floatPosition}px)`; // Updated to reflect the CSS changes
+                if (position > range) {
+                    moveDirection = -1; // Move up
+                } else if (position < 0) {
+                    moveDirection = 1; // Move down
+                }
+                
+                position += moveDirection * 0.5; // Speed of movement
+                logo.style.top = `${position}px`; // Apply position
+                
                 requestAnimationFrame(floatLogo);
             }
+            
             floatLogo();
         });
     </script>
