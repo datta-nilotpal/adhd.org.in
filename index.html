@@ -25,10 +25,9 @@
         }
         .container {
             position: relative;
-            padding-top: 120px;
+            padding: 120px 40px 40px; /* Adjusted padding */
             width: 100%;
             background-color: #f1faee;
-            padding: 40px;
             border-radius: 10px;
             text-align: center;
             overflow: hidden;
@@ -39,9 +38,9 @@
         .floating-logo {
             width: 100px;
             position: absolute;
-            top: 10px;
+            top: 10px; /* Adjusted for starting at top */
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translateX(-50%); /* Horizontally center only */
         }
         h1, h2, p, h3 {
             margin: 20px 0;
@@ -71,7 +70,7 @@
                 font-size: 32px;
             }
             h2 {
-                font-size: 20px;
+                font-size: 24px;
             }
             p {
                 font-size: 18px;
@@ -104,8 +103,8 @@
             function floatLogo() {
                 var currentTime = Date.now();
                 var timeDiff = currentTime - startTime;
-                var floatPosition = Math.sin(timeDiff * 0.002) * 10;
-                logo.style.top = `calc(50% + ${floatPosition}px)`;
+                var floatPosition = Math.sin(timeDiff * 0.002) * 10; // Amplitude adjustment
+                logo.style.top = `calc(10px + ${floatPosition}px)`; // Updated to reflect the CSS changes
                 requestAnimationFrame(floatLogo);
             }
             floatLogo();
@@ -114,3 +113,4 @@
 
 </body>
 </html>
+
