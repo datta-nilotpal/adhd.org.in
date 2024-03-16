@@ -25,7 +25,7 @@
         }
         .container {
             position: relative;
-            padding: 80px 40px 40px;
+            padding: 120px 40px 40px;
             width: 100%;
             background-color: #f1faee;
             border-radius: 10px;
@@ -110,7 +110,7 @@
                     moveDirection = 1; // Move down
                 }
                 
-                position += moveDirection * 0.15; // Speed of movement
+                position += moveDirection * 0.05; // Speed of movement
                 logo.style.top = `${position}px`; // Apply position
                 
                 requestAnimationFrame(floatLogo);
