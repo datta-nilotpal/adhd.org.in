@@ -24,6 +24,7 @@
             box-sizing: border-box;
         }
         .container {
+            position: relative;
             width: 100%;
             background-color: #f1faee;
             padding: 40px;
@@ -98,13 +99,12 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var logo = document.querySelector('.floating-logo');
-            var angle = 0;
+            var startTime = Date.now();
             function floatLogo() {
-                angle += 0.1;
-                var cos = Math.cos(angle) * 10; // Adjust the amplitude of the float
-                var sin = Math.sin(angle) * 10; // Adjust the amplitude of the float
-                logo.style.top = `calc(50% + ${cos}px)`;
-                logo.style.left = `calc(50% + ${sin}px)`;
+                var currentTime = Date.now();
+                var timeDiff = currentTime - startTime;
+                var floatPosition = Math.sin(timeDiff * 0.002) * 20; // 0.002 for speed, 20 for amplitude
+                logo.style.top = `calc(50% + ${floatPosition}px)`;
                 requestAnimationFrame(floatLogo);
             }
             floatLogo();
