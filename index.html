@@ -104,7 +104,7 @@
             function floatLogo() {
                 var currentTime = Date.now();
                 var timeDiff = currentTime - startTime;
-                var floatPosition = Math.sin(timeDiff * 0.002) * 20; // 0.002 for speed, 20 for amplitude
+                var floatPosition = Math.sin(timeDiff * 0.002) * 10;
                 logo.style.top = `calc(50% + ${floatPosition}px)`;
                 requestAnimationFrame(floatLogo);
             }
