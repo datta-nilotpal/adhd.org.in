@@ -8,6 +8,7 @@ html, body {
   align-items: center;
   background-color: #1F2020;
 }
+
 body {
   font-family: 'Lato', sans-serif;
   width: 100%;
@@ -15,6 +16,7 @@ body {
   padding: 20px;
   box-sizing: border-box;
 }
+
 .container {
   display: flex;
   justify-content: start;
@@ -25,6 +27,7 @@ body {
   padding-bottom: 5px;
   overflow: hidden;
 }
+
 .container::after {
   content: '';
   position: absolute;
@@ -40,44 +43,65 @@ body {
     #34a853 75% 100%
   );
 }
+
 .logo {
   max-width: 80px;
   max-height: 80px;
   padding: 15px;
 }
+
 h1, h2, p {
   margin: 20px 0;
   color: #fff;
 }
+
 h1, h2 {
   text-align: left;
   font-weight: 700;
 }
-h1{
+
+h1 {
   font-size: 28px;
 }
+
 h2 {
   font-size: 20px;
 }
+
 p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
 }
-.discord-btn {
-    display: inline-flex;
-    align-items: center;
-    padding: 10px 15px;
-    background-color: #5865F2; /* Discord's brand color */
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
+.whatsapp-btn {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
-.discord-btn img {
-    margin-right: 8px;
+.whatsapp-btn:hover, .whatsapp-btn:focus {
+  background-color: #1ebe5f;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  text-decoration: none;
+  color: white;
 }
-
+.whatsapp-btn img {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+@media (max-width: 768px) {
+  .whatsapp-btn {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+}
 @media (min-width: 768px) {
   h1 {
     font-size: 32px;
@@ -87,5 +111,9 @@ p {
   }
   p {
     font-size: 24px;
+  }
+  .whatsapp-btn {
+        font-size: 1.1rem;
+        padding: 12px 24px;
   }
 }
