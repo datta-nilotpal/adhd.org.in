@@ -34,10 +34,10 @@ body {
   width: 100%;
   background-image: linear-gradient(
     to right,
-    #4285f4 25%,
-    #34a853 25% 50%,
-    #fbbc05 50% 75%,
-    #ea4335 75% 100%
+    #ea4335 25%,
+    #fbbc05 25% 50%,
+    #34a853 50% 75%,
+    #4285f4 75% 100%
   );
 }
 .logo {
