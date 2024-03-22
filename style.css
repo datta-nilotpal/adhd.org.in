@@ -23,6 +23,7 @@ body {
   border-radius: 10px;
   position: relative;
   padding-bottom: 5px;
+  overflow: hidden;
 }
 .container::after {
   content: '';
