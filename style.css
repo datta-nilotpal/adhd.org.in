@@ -21,8 +21,8 @@ body {
   width: 100%;
   background-color: #3c3c3c;
   border-radius: 10px;
-  position: relative; /* Added to position the pseudo-element */
-  padding-bottom: 10px; /* Adjust padding to accommodate the border */
+  position: relative; /* Necessary for positioning the pseudo-element */
+  padding-bottom: 10px; /* Adjust padding to accommodate the visual border */
 }
 .container::after {
   content: '';
@@ -31,7 +31,13 @@ body {
   bottom: 0;
   height: 10px; /* Height of the border */
   width: 100%;
-  background-image: linear-gradient(to right, red, yellow, blue, green);
+  background-image: linear-gradient(
+    to right,
+    red 25%, /* Each color takes up 25% of the width */
+    yellow 25% 50%,
+    blue 50% 75%,
+    green 75% 100%
+  );
 }
 .logo {
   max-width: 80px;
