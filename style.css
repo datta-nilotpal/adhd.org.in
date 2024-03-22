@@ -64,6 +64,19 @@ p {
   font-size: 16px;
   line-height: 1.6;
 }
+.discord-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #5865F2; /* Discord's brand color */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.discord-btn img {
+    margin-right: 8px;
+}
 
 @media (min-width: 768px) {
   h1 {
