@@ -74,13 +74,14 @@ p {
   line-height: 1.6;
 }
 .whatsapp-btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: #25D366;
   color: white;
   padding: 10px 20px;
   border-radius: 25px;
   text-decoration: none;
-  font-weight: bold;
   font-family: 'Lato', sans-serif;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   transition: background-color 0.3s, box-shadow 0.3s;
@@ -94,7 +95,6 @@ p {
 }
 .whatsapp-btn img {
   margin-right: 8px;
-  vertical-align: middle;
 }
 @media (min-width: 768px) {
   h1 {
