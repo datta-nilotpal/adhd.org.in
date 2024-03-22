@@ -84,6 +84,7 @@ p {
   font-family: 'Lato', sans-serif;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   transition: background-color 0.3s, box-shadow 0.3s;
+  font-size: 16px;
 }
 .whatsapp-btn:hover, .whatsapp-btn:focus {
   background-color: #1ebe5f;
@@ -94,13 +95,6 @@ p {
 .whatsapp-btn img {
   margin-right: 8px;
   vertical-align: middle;
-}
-@media (max-width: 768px) {
-  .whatsapp-btn {
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-  }
 }
 @media (min-width: 768px) {
   h1 {
@@ -113,7 +107,7 @@ p {
     font-size: 24px;
   }
   .whatsapp-btn {
-        font-size: 1.1rem;
+        font-size: 24 px;
         padding: 12px 24px;
   }
 }
