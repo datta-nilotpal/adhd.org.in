@@ -6,7 +6,75 @@
     <link rel="icon" type="image/png" href="icon.png">
     <title>ADHD India</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Merriweather:wght@900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #a8dadc;
+        }
+        body {
+            font-family: 'Lato', sans-serif;
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            position: relative;
+            padding: 80px 40px 40px;
+            width: 100%;
+            background-color: #f1faee;
+            border-radius: 10px;
+            text-align: center;
+            overflow: hidden;
+            border-bottom: 10px solid #e63946;
+            box-shadow: 0 0 20px rgba(230, 57, 70, 0.2),
+                        0 0 40px rgba(255, 255, 255, 0.3);
+        }
+        .floating-logo {
+            width: 100px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        h1, h2, p {
+            margin: 20px 0;
+        }
+        h1 {
+            font-family: 'Merriweather', serif;
+            font-weight: 900;
+            font-size: 28px;
+            color: #1d3557;
+        }
+        h2 {
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+            font-size: 20px;
+            color: #1d3557;
+        }
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+    </style>
     <meta property="og:type" content="website" />
     <meta property="og:title" content="ADHD India" />
     <meta property="og:description" content="Committed to transforming lives through comprehensive support and empowerment" />
@@ -19,12 +87,36 @@
 </head>
 <body>
     <div class="container">
-        <script src="script.js"></script>
         <img src="/logo.png" alt="Logo" class="floating-logo">
         <h1>ADHD India</h1>
         <h2>Committed to transforming lives through comprehensive support and empowerment</h2>
         <p>Set to launch India's first and only nonprofit dedicated to ADHD, we will focus on diagnosis, psychotherapy, counseling, advocacy, litigation, awareness, and research.</p>
     </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const logo = document.querySelector('.floating-logo');
+            let moveDirection = 1; // 1 for down, -1 for up
+            let position = 0; // Start position
+            let range = 20; // Range of movement in pixels
+            
+            function floatLogo() {
+                if (position > range) {
+                    moveDirection = -1; // Move up
+                } else if (position < 0) {
+                    moveDirection = 1; // Move down
+                }
+                
+                position += moveDirection * 0.05; // Speed of movement
+                logo.style.top = `${position}px`; // Apply position
+                
+                requestAnimationFrame(floatLogo);
+            }
+            
+            floatLogo();
+        });
+    </script>
+
 </body>
 </html>
 
