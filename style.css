@@ -85,6 +85,10 @@ p {
   line-height: 1.6;
 }
 
+.whatsapp-btn img {
+    vertical-align: middle;
+}
+
 .whatsapp-btn {
   appearance: none;
   backface-visibility: hidden;
