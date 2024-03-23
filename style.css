@@ -27,7 +27,7 @@ body {
   box-sizing: border-box;
 }
 
-.container {
+.container-h1 {
   display: flex;
   justify-content: start;
   width: 100%;
@@ -38,7 +38,7 @@ body {
   overflow: hidden;
 }
 
-.container::after {
+.container-h1::after {
   content: '';
   position: absolute;
   left: 0;
