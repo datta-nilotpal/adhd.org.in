@@ -8,7 +8,7 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.fold-main-container {
+.above-fold-container {
   background-image: url('/logo.png');
   background-repeat: no-repeat;
   background-color: #fff; 
@@ -45,7 +45,7 @@ body {
   color: #fff;
 }
 
-.container {
+.container-h1 {
   display: flex;
   justify-content: start;
   width: 100%;
@@ -56,7 +56,7 @@ body {
   overflow: hidden;
 }
 
-.container::after {
+.container-h1::after {
   content: '';
   position: absolute;
   left: 0;
@@ -84,6 +84,7 @@ h1, h2 {
 
 h1 {
   font-size: 28px;
+  padding left: 10px;
 }
 
 h2 {
