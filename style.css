@@ -28,8 +28,9 @@ body {
 }
 
 .container-h1 {
-  display: flex;
-  justify-content: start;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   background-color: #e1e1e1;
   border-radius: 10px;
