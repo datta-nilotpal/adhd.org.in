@@ -116,19 +116,16 @@ p {
 }
 
 .whatsapp-btn:hover {
-  background-color: #1e8449;
+  background-color: #1ebe5f;
   opacity: 1;
   transform: translateY(0);
   transition-duration: .35s;
+  box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
 }
 
 .whatsapp-btn:active {
   transform: translateY(2px);
   transition-duration: .35s;
-}
-
-.whatsapp-btn:hover {
-  box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
 }
 
 @media (min-width: 768px) {
