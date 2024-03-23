@@ -116,6 +116,7 @@ p {
   overflow: hidden;
   position: relative;
   margin-left: 0;
+  padding: 12px 24px;
   text-align: center;
   text-decoration: none;
   transform: translate3d(0, 0, 0);
