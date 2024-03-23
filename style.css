@@ -11,7 +11,7 @@ html, body {
 
 body::selection {
   background: #fff;
-  color: #4285f4;
+  color: #000;
 }
 
 body {
