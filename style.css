@@ -6,7 +6,7 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #1F2020;
+  background-color: #fff;
 }
 
 ::-moz-selection {
@@ -31,7 +31,7 @@ body {
   display: flex;
   justify-content: start;
   width: 100%;
-  background-color: #3c3c3c;
+  background-color: #f2f7fe;
   border-radius: 10px;
   position: relative;
   padding-bottom: 5px;
@@ -62,7 +62,7 @@ body {
 
 h1, h2, p {
   margin: 20px 0;
-  color: #fff;
+  color: #000;
 }
 
 h1, h2 {
@@ -108,7 +108,6 @@ p {
   line-height: 1.5;
   outline: none;
   overflow: hidden;
-  padding: 13px 20px;
   position: relative;
   text-align: center;
   text-decoration: none;
