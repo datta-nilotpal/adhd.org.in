@@ -9,6 +9,11 @@ html, body {
   background-color: #1F2020;
 }
 
+body::selection {
+  background: #fff;
+  color: #4285f4;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   width: 100%;
