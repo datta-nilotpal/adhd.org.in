@@ -9,8 +9,13 @@ html, body {
   background-color: #1F2020;
 }
 
+::-moz-selection {
+  background: #4285f4;
+  color: #000;
+}
+
 ::selection {
-  background: #fff;
+  background: #4285f4;
   color: #000;
 }
 
