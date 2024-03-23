@@ -11,12 +11,12 @@ html, body {
 
 ::-moz-selection {
   background: #4285f4;
-  color: #000;
+  color: #fff;
 }
 
 ::selection {
   background: #4285f4;
-  color: #000;
+  color: #fff;
 }
 
 body {
@@ -85,10 +85,6 @@ p {
   line-height: 1.6;
 }
 
-.whatsapp-btn img {
-    vertical-align: middle;
-}
-
 .whatsapp-btn {
   appearance: none;
   backface-visibility: hidden;
@@ -99,7 +95,9 @@ p {
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   letter-spacing: normal;
