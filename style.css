@@ -1,36 +1,12 @@
-body {
-  font-family: 'Lato', sans-serif;
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
-  font-family: 'Lato', sans-serif;
-}
-
-.above-fold-container {
-  background-image: url('/logo.png');
-  background-repeat: no-repeat;
-  background-color: #fff; 
-  background-position: 95% 50%;
-  background-size: 50vh;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.above-fold {
+html, body {
   height: 100%;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
-  max-width: 600px;
-  padding: 20px;
-  box-sizing: border-box;
+  align-items: center;
+  background-color: #fff;
 }
 
 ::-moz-selection {
@@ -43,7 +19,15 @@ body {
   color: #fff;
 }
 
-.container-h1 {
+body {
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container {
   display: flex;
   justify-content: start;
   width: 100%;
@@ -54,7 +38,7 @@ body {
   overflow: hidden;
 }
 
-.container-h1::after {
+.container::after {
   content: '';
   position: absolute;
   left: 0;
@@ -70,6 +54,12 @@ body {
   );
 }
 
+.logo {
+  max-width: 80px;
+  max-height: 80px;
+  padding: 15px;
+}
+
 h1, h2, p {
   margin: 20px 0;
   color: #000;
@@ -82,7 +72,6 @@ h1, h2 {
 
 h1 {
   font-size: 28px;
-  padding-left: 10px;
 }
 
 h2 {
@@ -95,6 +84,7 @@ p {
   font-size: 16px;
   line-height: 1.6;
 }
+
 
 .whatsapp-btn img {
   margin-right: 8px;
