@@ -30,7 +30,7 @@ body {
 .container-h1 {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   width: 100%;
   background-color: #e1e1e1;
   border-radius: 10px;
