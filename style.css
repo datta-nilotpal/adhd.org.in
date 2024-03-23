@@ -92,7 +92,7 @@ p {
 .whatsapp-btn {
   appearance: none;
   backface-visibility: hidden;
-  background-color: #25d366;
+  background-color: #1ebe5f;
   border-radius: 56px;
   border-style: none;
   box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
@@ -109,6 +109,7 @@ p {
   outline: none;
   overflow: hidden;
   position: relative;
+  margin-left: 0;
   text-align: center;
   text-decoration: none;
   transform: translate3d(0, 0, 0);
@@ -121,7 +122,7 @@ p {
 }
 
 .whatsapp-btn:hover {
-  background-color: #1ebe5f;
+  background-color: #25d366;
   opacity: 1;
   transform: translateY(0);
   transition-duration: .35s;
