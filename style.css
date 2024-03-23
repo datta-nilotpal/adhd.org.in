@@ -89,6 +89,11 @@ p {
   margin-right: 8px;
 }
 
+.left-aligned {
+  align-self: flex-start;
+  width: 100%;
+}
+
 .whatsapp-btn {
   appearance: none;
   backface-visibility: hidden;
