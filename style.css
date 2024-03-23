@@ -85,11 +85,15 @@ p {
   line-height: 1.6;
 }
 
+.whatsapp-btn img {
+  margin-right: 8px;
+}
+
 .whatsapp-btn {
   appearance: none;
   backface-visibility: hidden;
   background-color: #25d366;
-  border-radius: 8px;
+  border-radius: 25px;
   border-style: none;
   box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
   box-sizing: border-box;
