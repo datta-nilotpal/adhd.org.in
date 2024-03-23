@@ -9,7 +9,7 @@ html, body {
   background-color: #1F2020;
 }
 
-body::selection {
+::selection {
   background: #fff;
   color: #000;
 }
