@@ -65,17 +65,16 @@ h1, h2, p {
   color: #000;
 }
 
-h1, h2 {
-  text-align: left;
-  font-weight: 700;
-}
-
 h1 {
   font-size: 30px;
+  text-align: left;
+  font-weight: 900;
 }
 
 h2 {
   font-size: 20px;
+  text-align: left;
+  font-weight: 700;
 }
 
 p {
